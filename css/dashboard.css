@@ -21,13 +21,15 @@ h3 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 20px;
     margin-bottom: 90px;
     margin-left: 20px;
     margin-top: 10px;
     background-color: #087f5b;
     box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
+    gap:10px
+
 }
 
 
@@ -40,14 +42,19 @@ h3 {
     box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
     grid-template-columns: 1fr 1fr;
     background-color: white;
+    margin: 10px;
+    border-radius: 10px;
 }
+/*.profile-card p{*/
+/*    margin-bottom: 0;*/
+/*}*/
 
 .user-img {
     width: 100px;
     border-radius: 50%;
     grid-column: 1/ span 2;
     justify-self: center;
-
+    margin-bottom: 10px;
 }
 
 .user-edit {
@@ -124,6 +131,7 @@ h3 {
 .health-card {
     display: flex;
     flex-direction: column;
+
     width: 200px;
     padding: 20px;
     padding-left: 10px;
@@ -148,6 +156,7 @@ h3 {
 .row-4 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -173,4 +182,10 @@ h3 {
 .medicine-rem-section td,.medicine-rem-section th{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/*footer*/
+
+footer{
+    margin-left: 24px;
 }
