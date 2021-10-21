@@ -1,0 +1,176 @@
+body {
+    width: min(1000px, 100%);
+    margin: auto;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.main-body{
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+}
+/* Profile sections*/
+
+.profile-section {
+    /*background-image: url("../img/healthcare.jpg");*/
+    /*height: 500px;*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: #087f5b;
+    box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-card {
+    display: grid;
+    align-self: center;
+    width: 250px;
+    padding: 12px 24px;
+    background-color: white;
+    box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+
+.user-img {
+    width: 100px;
+    border-radius: 50%;
+    grid-column: 1/ span 2;
+    justify-self: center;
+
+}
+
+.user-edit {
+    grid-column: 2;
+}
+
+.user-timers {
+    align-self: center;
+
+    padding-left: 100px;
+    color: white;
+}
+
+#next-checkup-timer {
+    grid-column: 2/span 1;
+
+}
+
+.timer-box {
+    font-size: 36px;
+    padding: 5px 5px;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.status-declaration {
+    font-size: 36px;
+}
+
+.status-declaration.warning {
+    font-size: 36px;
+    display: none;
+}
+
+/* Medication Sections*/
+.medication-section{
+    margin-bottom: 90px;
+}
+.medication-timers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.medication-table {
+    font-size: 18px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+}
+
+.medication-table table {
+    width: 170px;
+}
+
+.medication-table table td {
+    border-bottom: 1px solid #f8f9fa;
+}
+
+/*.medication-table table td:nth-child(even) {*/
+/*    border-bottom: 1px solid red;*/
+/*    text-align: right;*/
+/*}*/
+
+
+/*Health Section*/
+.health-section {
+    margin-bottom: 90px;
+}
+
+.health-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #087f5b;
+    box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
+    gap: 6px;
+    background-color: white;
+}
+
+.health-card .title {
+    font-size: 24px;
+}
+
+.health-card .value {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.health-card img {
+}
+
+.row-4 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/*Remaining section*/
+
+
+.medicine-rem-section{
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.rem-table{
+    box-shadow: 0 32px 24px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    /*display: flex;*/
+}
+.medicine-rem-section td,.medicine-rem-section th{
+    padding-left: 10px;
+    padding-right: 10px;
+}

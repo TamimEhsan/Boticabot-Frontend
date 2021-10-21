@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <title>Boticabot</title>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Boticabot</a>
+        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a aria-current="page" class="nav-link active" href="#profile-section">Profile</a>
+                <a class="nav-link" href="#health-section">Status</a>
+                <a class="nav-link" href="#medication-section">Medication</a>
+                <a class="nav-link" href="#medicine-rem-section">Remaining</a>
+                <a class="nav-link disabled">Log out</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-body">
+    <section class="profile-section" id="profile-section">
+        <div class="user-timers">
+            <p class="status-declaration success"> You have <span
+                    style="background-color:#ebfbee; color:#5c940d; padding: 2px 5px; border-radius: 5px;  font-weight: 600">NO</span>
+                missed medicines! 🎉</p>
+            <p class="status-declaration warning">You have <span
+                    style="background-color:#ffc9c9; color:#c92a2a; padding: 2px 10px; border-radius: 5px;  font-weight: 600">02</span>
+                missed medicine time</p>
+            <p>Next intake time in</p>
+            <p id="next-medicine-timer"></p>
+        </div>
+        <div class="profile-card">
+            <img alt="user image" class="user-img" src="img/Tamim.jpg">
+            <p>Name</p>
+            <p>Tamim Ehsan</p>
+            <p>Age</p>
+            <p>22 years</p>
+            <p>Last Checkup</p>
+            <p>12/3/2021</p>
+            <p>Next Checkup</p>
+            <p>--</p>
+            <!-- Display the countdown timer in an element -->
+            <p id="next-checkup-timer"></p>
+            <a class="btn btn-success user-edit" href="#">Edit</a>
+        </div>
+
+    </section>
+
+
+    <section class="health-section" id="health-section" >
+        <h3>Health Status</h3>
+        <div class="row-4">
+            <figure class="health-card">
+                <img src="img/oxygen-tank.png" width="36px">
+                <span class="title">Oxygen level</span>
+                <span class="value">95%</span>
+            </figure>
+            <figure class="health-card">
+                <img src="img/blood-pressure.png" width="36px">
+                <span class="title">Blood Pressure</span>
+                <span class="value">95%</span>
+            </figure>
+            <figure class="health-card">
+                <img src="img/thermometer.png" width="36px">
+                <span class="title">Temperature</span>
+                <span class="value">95%</span>
+            </figure>
+            <figure class="health-card">
+                <img src="img/glucose-meter.png" width="36px">
+                <span class="title">Glucose level</span>
+                <span class="value">95%</span>
+            </figure>
+        </div>
+    </section>
+
+
+    <section class="medication-section" id="medication-section">
+        <h3 >Medications</h3>
+
+        <div class="medication-timers">
+
+            <div class="medication-table">
+                <span class="table-title">Morning</span>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="medication-table">
+                <span class="table-title">Afternoon</span>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="medication-table">
+                <span class="table-title">Night</span>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                        <td>Napa</td>
+                        <td>01</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="medicine-rem-section" id="medicine-rem-section">
+        <h3>Medicine Amount</h3>
+        <div class="rem-table">
+            <table >
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Remaining</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Napa</td>
+                    <td>15</td>
+                    <td class="badge bg-success">Enough</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Napa</td>
+                    <td>13</td>
+                    <td class="badge bg-success">Enough</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Napa</td>
+                    <td>1</td>
+                    <td class="badge bg-danger">Low</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Napa</td>
+                    <td>5</td>
+                    <td class="badge bg-warning">Warning</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        ©Copyright: Boticabot 2021
+    </footer>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script crossorigin="anonymous"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<script src="js/timer.js">
+
+</script>
+</body>
+</html>
