@@ -10,8 +10,8 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
     <link href="css/dashboard.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -26,15 +26,14 @@
                 data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a aria-current="page" class="nav-link active" href="#profile-section">Profile</a>
                 <a class="nav-link" href="#health-section">Status</a>
                 <a class="nav-link" href="#medication-section">Medication</a>
                 <a class="nav-link" href="#medicine-rem-section">Remaining</a>
-                <a class="nav-link"  >Log out</a>
+                <a class="nav-link">Log out</a>
             </div>
-
 
 
         </div>
@@ -44,6 +43,11 @@
 <div class="main-body">
     <section class="profile-section" id="profile-section">
         <div class="user-timers">
+            <div style="margin:24px 0;display: flex;gap: 10px;align-items: center;font-weight: 600; font-size: 30px">
+                <img src="img/pill-box.png" width="48px">
+                <span >Boticabot Says</span>
+                <br/>
+            </div>
             <p class="status-declaration success"> You have <span
                     style="background-color:#ebfbee; color:#5c940d; padding: 2px 5px; border-radius: 5px;  font-weight: 600">NO</span>
                 missed medicines! 🎉</p>
@@ -66,14 +70,14 @@
             <p>Next Checkup</p>
             <p class="value">01/05/2022</p>
             <!-- Display the countdown timer in an element -->
-            <p id="next-checkup-timer" class="value"></p>
+            <p class="value" id="next-checkup-timer"></p>
             <a class="btn btn-success user-edit" href="#">Edit</a>
         </div>
 
     </section>
 
 
-    <section class="health-section" id="health-section" >
+    <section class="health-section" id="health-section">
         <h3>Health Status</h3>
         <div class="row-4">
             <figure class="health-card">
@@ -84,30 +88,30 @@
             <figure class="health-card">
                 <img src="img/blood-pressure.png" width="36px">
                 <span class="title">Blood Pressure</span>
-                <span class="value">95%</span>
+                <span class="value">85/115</span>
             </figure>
             <figure class="health-card">
                 <img src="img/thermometer.png" width="36px">
-<!--                <ion-icon name="thermometer-outline" class="feature-icon"></ion-icon>-->
+                <!--                <ion-icon name="thermometer-outline" class="feature-icon"></ion-icon>-->
                 <span class="title">Temperature</span>
-                <span class="value">95%</span>
+                <span class="value">97.4°</span>
             </figure>
             <figure class="health-card">
                 <img src="img/glucose-meter.png" width="36px">
                 <span class="title">Glucose level</span>
-                <span class="value">95%</span>
+                <span class="value">90</span>
             </figure>
         </div>
     </section>
 
 
     <section class="medication-section" id="medication-section">
-        <h3 >Medications</h3>
+        <h3>Medications</h3>
 
         <div class="medication-timers">
 
             <div class="medication-table">
-                <img src="img/morning.png"  ><br/>
+                <img src="img/morning.png"><br/>
                 <span class="table-title">Morning</span>
                 <table>
                     <thead>
@@ -139,10 +143,10 @@
                     </tr>
                     </tbody>
                 </table>
-                <a href="#" class="btn-edit-meds">Edit</a>
+                <a class="btn-edit-meds" href="#">Edit</a>
             </div>
             <div class="medication-table">
-                <img src="img/sunsets.png" ><br/>
+                <img src="img/sunsets.png"><br/>
                 <span class="table-title">Afternoon</span>
 
                 <table>
@@ -175,10 +179,10 @@
                     </tr>
                     </tbody>
                 </table>
-                <a href="#" class="btn-edit-meds">Edit</a>
+                <a class="btn-edit-meds" href="#">Edit</a>
             </div>
             <div class="medication-table">
-                <img src="img/night.png" > <br/>
+                <img src="img/night.png"> <br/>
                 <span class="table-title">Night</span>
 
                 <table>
@@ -212,7 +216,7 @@
                     </tbody>
 
                 </table>
-                <a href="#" class="btn-edit-meds">Edit</a>
+                <a class="btn-edit-meds" href="#">Edit</a>
             </div>
         </div>
     </section>
@@ -220,7 +224,7 @@
     <section class="medicine-rem-section" id="medicine-rem-section">
         <h3>Medicine Amount</h3>
         <div class="rem-table">
-            <table >
+            <table>
                 <thead>
                 <tr>
                     <th>Name</th>
@@ -275,7 +279,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <script src="js/timer.js">
