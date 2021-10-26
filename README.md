@@ -2,7 +2,7 @@
 
 Link to site : [Boticabot](https://tamimehsan.github.io/Boticabot-Frontend/dashboard.html)
 
-![](\img\Banner2.jpg)
+![](https://raw.githubusercontent.com/TamimEhsan/Boticabot-Frontend/master/img/Banner2.jpg)
 
 
 
