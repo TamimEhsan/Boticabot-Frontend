@@ -13,13 +13,13 @@ const timerFunction = function () {
     if(hours<10) hours = "0"+hours;
     if(days<10) days = "0"+days;
 
-    document.getElementById("next-checkup-timer").innerHTML = `${days}d ${hours}h ${minutes}m`;
+    document.getElementById("next-checkup-timer").innerHTML = `${1}d ${hours}h ${minutes}m`;
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("next-checkup-timer").innerHTML = "EXPIRED";
     }
 
-    document.getElementById("next-medicine-timer").innerHTML = `<span class="timer-box">${days}d</span> <span class="timer-box">${hours}h</span> <span class="timer-box">${minutes}m</span> <span class="timer-box">${seconds}s</span>`;
+    document.getElementById("next-medicine-timer").innerHTML = `<span class="timer-box">${0}d</span> <span class="timer-box">${hours}h</span> <span class="timer-box">${minutes}m</span> <span class="timer-box">${seconds}s</span>`;
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("next-medicine-timer").innerHTML = "EXPIRED";
